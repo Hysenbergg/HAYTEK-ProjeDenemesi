@@ -9,7 +9,7 @@ const Login = ({navigation}) => {
 
   function SystemLogin (values) {
     console.log(values);
-    //navigation.navigate('ApplicationFormPages');
+    navigation.navigate('Home');
   }
   return(
     <SafeAreaView style={styles.container} >

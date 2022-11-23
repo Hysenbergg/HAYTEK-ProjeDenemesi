@@ -1,5 +1,4 @@
 import React from "react";
-import { SafeAreaView, Text} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,14 +9,14 @@ import HomePage from './Pages/HomePage';
 import LoginPage from './Pages/LoginPage';
 import SelectedForm from './Pages/SelectedForm';
 import ApplicationForm from './Forms/ApplicationForm';
+import PastFormPage from './Pages/PastFormPage';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-function Router () {
+function Home(){  // Tab içinde Stack olusturmak icin bu kısımı olusturduk.
   return(
-    <NavigationContainer>
-      <Tab.Navigator
+    <Tab.Navigator
         screenOptions={({route}) => ({
           headerStyle: {backgroundColor: '#2D956A'},
           headerTintColor: '#fff',
@@ -26,11 +25,11 @@ function Router () {
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
 
-            if (route.name === 'ApplicationForm'){
+            if (route.name === 'PastFormPage'){
               iconName = focused ? 'home-circle' : 'home-circle-outline';
             }else if(route.name === 'SelectedForm'){
               iconName = focused ? 'form-select' : 'form-select';
-            }else if(route.name === 'LoginPage'){
+            }else if(route.name === 'HomePage'){
               iconName = focused ? 'folder-zip' : 'folder-zip-outline';
             }
 
@@ -40,10 +39,22 @@ function Router () {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name="ApplicationForm" component={ApplicationForm} />
+        <Tab.Screen name="PastFormPage" component={PastFormPage} />
         <Tab.Screen name="SelectedForm" component={SelectedForm} />
-        <Tab.Screen name="LoginPage" component={LoginPage} />
+        <Tab.Screen name="HomePage" component={HomePage} />
       </Tab.Navigator>
+  )
+}
+
+function Router () {  // Navigation kısmında ilk olarak calısan kısım burası burayı baz alarak calısıyor.
+  return(
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="LoginPage" component={LoginPage} options={{headerShown: false}} />
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+        <Stack.Screen name="ApplicationForm" component={ApplicationForm} options={{headerShown: false}} />
+
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
