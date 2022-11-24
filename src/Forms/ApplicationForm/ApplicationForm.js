@@ -22,7 +22,9 @@ const ApplicationForm = () => {
       >
         {({handleChange, handleSubmit, values}) => (
           <ScrollView >
-            <Text style={styles.title}> 1 - Firma/Kurum Bilgileri</Text>
+            <View style={styles.title_container}>
+              <Text style={styles.title}> 1 - Firma/Kurum Bilgileri </Text>
+            </View>
             <Input label="Firma Adı" variant="standard" onChangedText={handleChange('firmaadi')} value={values.firmaadi} multiline={false} />
             <Input label="Firma Tanımı" variant="standard" onChangedText={handleChange('firmatanimi')} value={values.firmatanimi} multiline={false} />
             <Input label="Firma Sahibinin Adı" variant="standard" onChangedText={handleChange('firmasahibiadi')} value={values.firmasahibiadi} multiline={false} />

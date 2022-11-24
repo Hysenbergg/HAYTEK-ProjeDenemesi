@@ -22,8 +22,8 @@ const Login = ({navigation}) => {
       >
         {({ handleChange, handleSubmit, values}) => (
           <View style={styles.body_container} >
-            <Input label="Kullanici Adı" variant="outlined" onChangedText={handleChange('username')} value={values.username} multiline={false} />
-            <Input label="Şifre" variant="outlined" onChangedText={handleChange('password')} value={values.password} multiline={false} />
+            <Input label="Kullanici Adı" variant="outlined" iconName="account" iconSize={24} iconColor="purple" onChangedText={handleChange('username')} value={values.username} multiline={false} />
+            <Input label="Şifre" variant="outlined" iconName="key" iconSize={24} iconColor="purple" onChangedText={handleChange('password')} value={values.password} multiline={false} />
             <Button text="Giriş Yap" variant="contained" onPress={handleSubmit} color="purple" />
           </View>
         )}

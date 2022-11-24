@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, Text} from 'react-native';
 
-const HomePage = () => {
+const ProfilePage = () => {
   return(
     <SafeAreaView style={{flex: 1}}>
       <Text>Welcome to Home Page </Text>
@@ -9,4 +9,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage;
+export default ProfilePage;
