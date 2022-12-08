@@ -2,7 +2,6 @@ import React from "react";
 import { SafeAreaView, View, Text} from 'react-native';
 import Mybutton from '../../Components/Mybutton';
 import Realm from "realm";
-
 let realm;
 export default class SelectedForm extends React.Component {
   constructor(props) {
@@ -13,15 +12,15 @@ export default class SelectedForm extends React.Component {
         {
           name: 'form_details',
           properties: {
-            user_id: { type: 'int', default: 0 },
+            form_id: { type: 'int', default: 0 },
             degerlendirme_tarihi: 'string',
             dosya_numarasi: 'string',
             firma_kurulus: 'string',
-            adres: 'string',
-            telefon_no: 'int',
-            fax: 'string',
-            eposta: 'string',
-            ilgili_kisi: 'string',
+            firma_adres: 'string',
+            firma_telefon_no: 'string',
+            firma_fax: 'string',
+            firma_eposta: 'string',
+            firma_ilgili_kisi: 'string',
           },
         },
       ],
@@ -31,8 +30,18 @@ export default class SelectedForm extends React.Component {
   render () {
     return(
       <View style={{flex: 1}}>
-        <Mybutton title="Soru Listesi" cumtomClick={() => this.props.navigation.navigate('LoginForm')} />
-        <Mybutton title="Yedek" cumtomClick={SorularaGitme} />
+        <Mybutton 
+          title="Soru Listesi" 
+          customClick={() => this.props.navigation.navigate('LoginForm')} 
+        />
+        <Mybutton 
+          title="Arşiv" 
+          customClick={() => this.props.navigation.navigate('FormListeleme')} 
+        />
+        <Mybutton 
+          title="Profil Sayfası" 
+          customClick={() => this.props.navigation.navigate('ProfilePage')} 
+        />
       </View>
     )
   }

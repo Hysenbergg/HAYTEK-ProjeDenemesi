@@ -9,7 +9,7 @@ const Login = ({navigation}) => {
 
   function SystemLogin (values) {
     console.log(values);
-    navigation.navigate('Home');
+    navigation.navigate('SelectedForm');
   }
   return(
     <SafeAreaView style={styles.container} >

@@ -2,13 +2,10 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container: {
-        paddingLeft: 5,
-        margin: 10,
-        borderRadius: 8,
-        flexDirection: "row",
+        marginLeft: 35,
+        marginRight: 35,
+        marginTop: 10,
+        borderColor: '#007FFF',
+        borderWidth: 1,
     },
-    input: {
-        flex: 1 
-    }
-
 })
