@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, TextInput } from 'react-native';
 import styles from './TextInput.style';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const MyTextInput = props => {
   return (
@@ -9,7 +10,7 @@ const MyTextInput = props => {
       <TextInput
         underlineColorAndroid="transparent"
         placeholder={props.placeholder}
-        placeholderTextColor="#007FFF"
+        placeholderTextColor="purple"
         keyboardType={props.keyboardType}
         onChangeText={props.onChangeText}
         returnKeyType={props.returnKeyType}
@@ -20,6 +21,7 @@ const MyTextInput = props => {
         blurOnSubmit={false}
         value={props.value}
       />
+      <Icon name={props.iconName} size={props.iconSize} color={props.iconColor} />
     </View>
   );
 };

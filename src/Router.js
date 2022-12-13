@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
+import { createStackNavigator, HeaderTitle } from "react-navigation-stack";
 import LoginPage from "./Pages/LoginPage";
 import SelectedForm from "./Pages/SelectedForm";
 import LoginForm from "./Forms/LoginForm";
@@ -22,7 +22,8 @@ const myStack = createStackNavigator({
     'FormListeleme': FormListeleme,
     'ProfilePage': ProfilePage,
 }, {
-    initialRouteName: 'LoginPage'
+    initialRouteName: 'LoginPage',
+    
 });
 
 const AppContainer = createAppContainer(myStack);
