@@ -9,7 +9,7 @@ const Login = ({navigation}) => {
 
   function SystemLogin (values) {
     console.log(values);
-    navigation.navigate('SelectedForm');
+    navigation.navigate('TabBarScreen');
   }
   return(
     <SafeAreaView style={styles.container} >

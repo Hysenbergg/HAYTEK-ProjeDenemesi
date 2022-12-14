@@ -34,14 +34,6 @@ export default class SelectedForm extends React.Component {
           title="Soru Listesi" 
           customClick={() => this.props.navigation.navigate('LoginForm')} 
         />
-        <Mybutton 
-          title="Arşiv" 
-          customClick={() => this.props.navigation.navigate('FormListeleme')} 
-        />
-        <Mybutton 
-          title="Profil Sayfası" 
-          customClick={() => this.props.navigation.navigate('ProfilePage')} 
-        />
       </View>
     )
   }
