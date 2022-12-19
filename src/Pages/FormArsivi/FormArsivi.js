@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, Text, View, Alert, TouchableOpacity, Modal, Pressable } from 'react-native';
+import { SafeAreaView, FlatList, Text, View, Alert, TouchableOpacity, Modal, Pressable } from 'react-native';
 //import MyTextInput from "../../Components/TextInput/TextInput";
 //import MyButton from '../../Components/Mybutton/Mybutton';
 import styles from './FormArsivi.style';
@@ -39,7 +39,7 @@ export default class FormArsivi extends React.Component {
           [
             {
               text: 'Tamam',
-              onPress: () => that.props.navigation.navigate('SelectedForm'),
+              onPress: () => that.props.navigation.navigate('FormStack'),
             },
           ],
           { cancelable: false }
@@ -56,11 +56,36 @@ export default class FormArsivi extends React.Component {
       <View style={styles.separator} />
     );
   };
+  
+  // tıklanabilir listenin fonksiyonu.
+  FormListesi = () => {
 
-  render() {
     return (
-      <View style={styles.centeredView}>
-        <Modal
+      <FlatList
+        data={this.state.FlatListItems}
+        ItemSeparatorComponent={this.ListViewItemSeparator}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <TouchableOpacity onPress={() =>  this.setState(prevState => ({
+            modalVisible: !prevState.modalVisible
+          }))}>
+            <View style={styles.body_container}>
+              <Text style={styles.formid}>{item.form_id}</Text>
+              <View style={styles.id_container} >
+                <Text style={styles.formveritext}>Dosya Numarası: {item.dosya_numarasi}</Text>
+                <Text style={styles.formveritext}>Firma/Kuruluş İsmi: {item.firma_kurulus}</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        )}
+      />
+    );
+  };
+
+  // Form Listesinde tıklanabilir olan itemların tıklandıktan sonra ki açılaccak olan pop-up ekranı.
+  FormListeAyrinti = () => {
+    return (
+      <Modal
           animationType="slide"
           transparent={true}
           visible={this.state.modalVisible}
@@ -71,37 +96,59 @@ export default class FormArsivi extends React.Component {
             }));
           }}
         >
-          <View style={styles.centeredView}>
+          <View style={styles.modal_container} >
             <View style={styles.modalView}>
-              <Text style={styles.modalText}>Hello World!</Text>
+              <Text style={{margin: 10}}> Buraya tıklanan formun bilgileri gelecek. </Text>
               <Pressable
                 style={[styles.button, styles.buttonClose]}
                 onPress={() => this.setState(prevState => ({
                   modalVisible: !prevState.modalVisible
                 }))}
               > 
-                <Text style={styles.textStyle}>Hide Modal</Text>
+                <Text style={styles.modal_offButton}>Form Ekranını Kapat</Text>
               </Pressable>
             </View>
           </View>
-        </Modal>                
-        <FlatList
-          data={this.state.FlatListItems}
-          keyExtractor={(item, index) => index.toString()}
-          renderItem={({ item }) => (
-            <TouchableOpacity onPress={() => this.setState(prevState => ({
-              modalVisible: !prevState.modalVisible
-            }))}>
-              <View style={styles.body_container}>
-                <Text style={styles.formveritext}>Id: {item.form_id}</Text>
+        </Modal>
+    )
+  }
+
+  //Şu anda geçici olarak kapalı.
+  FormListeAyrintiChild = () => {
+    return (
+      <FlatList
+        data={this.state.FlatListItems}
+        ItemSeparatorComponent={this.ListViewItemSeparator}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <TouchableOpacity onPress={() => this.setState(prevState => ({
+            modalVisible: !prevState.modalVisible
+          }))}>
+            <View style={styles.body_container}>
+              <View style={styles.id_container} >
                 <Text style={styles.formveritext}>Değerlendirme Tarihi: {item.degerlendirme_tarihi}</Text>
                 <Text style={styles.formveritext}>Dosya Numarası: {item.dosya_numarasi}</Text>
                 <Text style={styles.formveritext}>Firma/Kuruluş İsmi: {item.firma_kurulus}</Text>
+                <Text style={styles.formveritext} >Firma Adresi: {item.firma_adres}</Text>
+                <Text style={styles.formveritext}>Firma Telefon Numarası: {item.firma_telefon_no}</Text>
+                <Text style={styles.formveritext}>Firma Fax: {item.firma_fax}</Text>
+                <Text style={styles.formveritext}>Firma e-posta: {item.firma_eposta}</Text>
+                <Text style={styles.formveritext}>Firma İlgili Kişisi: {item.firma_ilgili_kisi}</Text>
               </View>
-            </TouchableOpacity>
-          )}
-        />
-      </View>
+            </View>
+          </TouchableOpacity>
+        )}
+      />
+    )
+  }
+
+  render() {
+    return (
+      <SafeAreaView style={styles.centeredView}>
+        <Text style={styles.baslik} > Form Arşivi </Text>
+        <this.FormListeAyrinti />               
+        <this.FormListesi />
+      </SafeAreaView>
     )
   }
 }
@@ -116,7 +163,7 @@ export default class FormArsivi extends React.Component {
     title="Form Sil"
     customClick={this.deleteForm.bind(this)}
   />
-
+  <Text style={styles.formveritext}>Değerlendirme Tarihi: {item.degerlendirme_tarihi}</Text>
   <Text>Firma Adresi: {item.firma_adres}</Text>
   <Text>Firma Telefon Numarası: {item.firma_telefon_no}</Text>
   <Text>Firma Fax: {item.firma_fax}</Text>

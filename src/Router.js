@@ -9,7 +9,6 @@ import FormListeleme from "./Pages/FormArsivi";
 import ProfilePage from "./Pages/ProfilePage";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const Tab = createBottomTabNavigator();
 const Stackk = createNativeStackNavigator();
 
 class Stack extends Component{
@@ -29,6 +28,8 @@ class Stack extends Component{
     }
 }
 
+const Tab = createBottomTabNavigator();
+
 function TabBarScreen () {
     return (
         <Tab.Navigator
@@ -47,19 +48,19 @@ function TabBarScreen () {
             }}
         >
             <Tab.Screen
+                name="FormListeleme"
+                component={FormListeleme}
+                options={{
+                    tabBarIcon: () => <Icon name="folder-home" size={30} />,
+                    tabBarLabel: 'Arşiv',
+                }}
+            />
+            <Tab.Screen
                 name="FormStack"
                 component={FormStackYapisi}
                 options={{
                     tabBarIcon: () => <Icon name="home" size={30} />,
                     tabBarLabel: 'Home',
-                }}
-            />
-            <Tab.Screen
-                name="FormListeleme"
-                component={FormListeleme}
-                options={{
-                    tabBarIcon: () => <Icon name="folder-home" size={30} />,
-                    tabBarLabel: 'Stats'
                 }}
             />
             <Tab.Screen

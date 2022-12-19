@@ -22,8 +22,8 @@ const Login = ({navigation}) => {
       >
         {({ handleChange, handleSubmit, values}) => (
           <View style={styles.body_container} >
-            <Input placeholder="Kullanici Adı" iconName="account" iconSize={24} iconColor="purple" onChangedText={handleChange('username')} value={values.username} multiline={false} />
-            <Input placeholder="Şifre" iconName="key" iconSize={24} iconColor="purple" onChangedText={handleChange('password')} value={values.password} multiline={false} />
+            <Input placeholder="Kullanici Adı" iconName="account" iconSize={24} iconColor="purple" onChangeText={handleChange('username')} value={values.username} multiline={false} />
+            <Input placeholder="Şifre" iconName="key" iconSize={24} iconColor="purple" onChangeText={handleChange('password')} value={values.password} multiline={false} />
             <Button title="Giriş Yap" customClick={handleSubmit} />
           </View>
         )}

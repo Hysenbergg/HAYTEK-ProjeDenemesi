@@ -17,7 +17,7 @@ const MyTextInput = props => {
         numberOfLines={props.numberOfLines}
         multiline={props.multiline}
         onSubmitEditing={props.onSubmitEditing}
-        style={props.style}
+        style={styles.input}
         blurOnSubmit={false}
         value={props.value}
       />
