@@ -1,5 +1,6 @@
 import React from "react";
-import { SafeAreaView, FlatList, Text, View, Alert, TouchableOpacity, Modal, Pressable } from 'react-native';
+import { SafeAreaView, FlatList, Text, View, Alert, TouchableOpacity, Modal, Pressable, Button,  } from 'react-native';
+import { useDispatch } from "react-redux";
 //import MyTextInput from "../../Components/TextInput/TextInput";
 //import MyButton from '../../Components/Mybutton/Mybutton';
 import styles from './FormArsivi.style';
@@ -146,13 +147,12 @@ export default class FormArsivi extends React.Component {
     return (
       <SafeAreaView style={styles.centeredView}>
         <Text style={styles.baslik} > Form Arşivi </Text>
-        <this.FormListeAyrinti />               
+        <this.FormListeAyrinti />        
         <this.FormListesi />
       </SafeAreaView>
     )
   }
 }
-
 /*
   <MyTextInput 
     placeholder="ID numarası griniz.." 

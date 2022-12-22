@@ -1,11 +1,21 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import Config from 'react-native-config';
+import { SafeAreaView, Text, Button } from 'react-native';
+import { useDispatch } from 'react-redux';
 
-export default ProfilePage = () => {
+const ProfilePage = () => {
+  const dispatch =useDispatch();
+
+  function handleLogOut(){
+    dispatch({type: 'SET_USER', payload: {user: null}});
+  }
+
+
   return (
     <SafeAreaView>
-      <Text> Profile Page olacak. { Config.API_URL } </Text>
+      <Text> Profile Page olacak.</Text>
+      <Button style={{  }} title="LogOut" onPress={handleLogOut} />
     </SafeAreaView>
   )
 }
+
+export default ProfilePage;
