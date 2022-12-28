@@ -1,0 +1,845 @@
+[
+    {
+        "tüm_barinak_türleri_icin_ortak_kriterler": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.1.1.1",
+                "soru": "İşletmede ayrı bir bölüm olarak süt sağım ünitesi var mı ve sürekli çalışır durumda mı?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "B.1.1.1",
+                "soru": "İşletmede, işletme büyüklüğüne uygun ve ayrı bir bölüm olarak süt sağım sistemi ile süt soğutma ve depolama ünitesi var mı?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.1.1.2",
+                "soru": "İşletmede ayak banyoluğu var mı?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "B.1.1.2",
+                "soru": "İşletmede ayak banyoluğu en az 15 cm derinlik ve en az 180 cm uzunlukta mı?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "C.1.1.3",
+                "soru": "İşletmede tedavi bölmesi var mı?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "B.1.1.3",
+                "soru": "İşletmede tedavi bölmesi en az 15,75 m2 olarak planlanmış mı?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "A.1.1.3",
+                "soru": "İşletmede tedavi bölmesi her 50 hayvan başına en az 15,75 m2 alana sahip mi?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "C.1.1.4",
+                "soru": "İşletmede karantina ve gözetim ünitesi var mı?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "B.1.1.4",
+                "soru": "İşletmede karantina alanı barınak alanlarının uzağında veya istinat duvarı dışında mı?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "A.1.1.4",
+                "soru": "İşletmede karantina alanı en az 16 m2 alana sahip mi?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "C.1.1.5",
+                "soru": "İşletmede doğum bölmeleri var mı?"
+            },
+            {
+                "soru_id": "12",
+                "soru_adresi": "B.1.1.5",
+                "soru": "İşletmede ferdi doğum bölmesi en az 15,75 m2 alana sahip mi?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "A.1.1.5",
+                "soru": "İşletmede ferdi doğum bölmesi her 25 sağmal hayvan başına en az 15,75 m2 alana sahip mi?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "C.1.1.6",
+                "soru": "İşletmede bireysel buzağı kulübeleri var mı?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "C.1.1.7",
+                "soru": "İşletmede bireysel buzağı kulübeleri uygun genişlikte mi?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "B.1.1.6",
+                "soru": "Buzağı kulübeleri açıkta ise uygun şekilde planlanmış mı?"
+            },
+            {
+                "soru_id": "17",
+                "soru_adresi": "C.1.1.8",
+                "soru": "İşletmede buzağıların grup olarak barındırılmalarına imkan sağlayan bölmeler var mı?"
+            },
+            {
+                "soru_id": "18",
+                "soru_adresi": "C.1.1.9",
+                "soru": "İşletmede buzağıların grup olarak barındırılmalarına imkan sağlayan bölmeler uygun genişlikte mi?"
+            },
+            {
+                "soru_id": "19",
+                "soru_adresi": "C.1.1.10",
+                "soru": "Sekiz haftalıktan büyük olan buzağılar grup halinde barındırılıyor mu?"
+            },
+            {
+                "soru_id": "20",
+                "soru_adresi": "B.1.1.7",
+                "soru": "İşletmede genç hayvan, düve ve kurudaki ineklerin barındırılması için ayrı bölmeler var mı?"
+            },
+            {
+                "soru_id": "21",
+                "soru_adresi": "C.1.1.11",
+                "soru": "İşletmede yem ve yem maddelerinin stoklama / saklama / depolama şartları uygun mu?"
+            },
+            {
+                "soru_id": "22",
+                "soru_adresi": "B.1.1.10",
+                "soru": "İşletmede üretilen ya da dışarıdan satın alınan yemin hayvanların gereksinim duyduğu döneme kadar saklanmasını sağlayan yem depolama yapıları var mı?"
+            },
+            {
+                "soru_id": "23",
+                "soru_adresi": "C.1.1.2",
+                "soru": "İşletme büyüklüğü 100 başın üzerinde ise mevcut yapılara ilave sistemler mevcut mu?"
+            },
+            {
+                "soru_id": "24",
+                "soru_adresi": "C.1.1.12",
+                "soru": "Tüm hayvanlar yemliklerden eşzamanlı olarak yararlanabiliyor mu?"
+            },
+            {
+                "soru_id": "25",
+                "soru_adresi": "C.1.1.13",
+                "soru": "Tüm hayvanlar suya istedikleri zaman ulaşabiliyor mu?"
+            },
+            {
+                "soru_id": "26",
+                "soru_adresi": "B.1.1.8",
+                "soru": "İşletmede otomatik veya yarı otomatik suluklar var m?"
+            },
+            {
+                "soru_id": "27",
+                "soru_adresi": "A.1.1.8",
+                "soru": "Barınakta her 10 hayvan için 1 otomatik veya yarı otomatik suluk veya her hayvan için 6 cm tekne tipi suluk mesafesi var mı?"
+            },
+            {
+                "soru_id": "28",
+                "soru_adresi": "C.1.1.14",
+                "soru": "Barınakta idrar ve gübre temizliği yapılıyor ve kontrollü bir şekilde uzaklaştırılıyor mu?"
+            },
+            {
+                "soru_id": "29",
+                "soru_adresi": "B.1.1.9",
+                "soru": "İşletmede gübre ve idrarların depolanmasına olanak tanıyan alanlar var mı?"
+            },
+            {
+                "soru_id": "30",
+                "soru_adresi": "A.1.1.6",
+                "soru": "İşletmede katı ve sıvı gübre çukuru ayrı veya beraber kapasiteleri en az 3 aylık toplam gübre depolamaya uygun mu?"
+            },
+            {
+                "soru_id": "31",
+                "soru_adresi": "A.1.1.7",
+                "soru": "İşletmede biriken gübreler çevresel bir etki yapılmadan değerlendiriliyor mu?"
+            },
+            {
+                "soru_id": "32",
+                "soru_adresi": "A.1.1.1",
+                "soru": "İşletme yeri, hâkim rüzgârların yönü ile yerleşim merkezlerinin büyüme potansiyelleri dikkate alınarak planlanmış mı?"
+            }
+        ]
+    },
+    {
+        "bagli_durak": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.1.2.1",
+                "soru": "İşletmede hayvanların günlük/öğünlük beslenmelerine imkan tanıyacak yemlik yolu var mı?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "C.1.2.2",
+                "soru": "Barınak yüksekliği tabandan saçaklara kadar en az 3 metre mi?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.1.2.3",
+                "soru": "Barınak çatısı, barınağın korunmasını sağlayacak yapıda mı?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "B.1.2.4",
+                "soru": "Barınak pencereleri, doğal aydınlatma ve havalandırma için toplam ahır taban alanının en az 25’te 1’inde mi?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "C.1.2.5",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) hayvanların herhangi bir zorluk olmadan yatabileceği, dinlenebileceği, ayağa kalkabileceği, dışkı ve idrar yapabileceği şekilde mi?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "C.1.2.6",
+                "soru": "Suluklar, yemlikler ve dinlenme alanlarının ıslanmasına neden olmayacak şekilde mi?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "C.1.2.7",
+                "soru": "Barınaklarda doğal ya da yapay yoldan bir aydınlatma var mı?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "B.1.2.1",
+                "soru": "Barınak yemlik yolu traktör veya yem dağıtım aracının girebileceği genişlikte mi?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "B.1.2.2",
+                "soru": "Barınak kapıları traktör veya yem dağıtım aracının girebileceği genişlikte mi?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "B.1.2.3",
+                "soru": "Barınak çatısı doğal havalandırmayı sağlamak için en az 22 derece, en çok 42 derece eğime sahip mi?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "B.1.2.4",
+                "soru": "Barınak pencereleri hayvanların omuz yüksekliğinin en az 30 cm üzerinde mi?"
+            },
+            {
+                "soru_id": "12",
+                "soru_adresi": "B.1.2.5",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) en az 150 cm uzunlukta ve en az 110 cm genişlikte mi?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "B.1.2.6",
+                "soru": "Barınak hayvanlarının yaşadığı bölümlerin (durakların) gübrelik ve idrar kanalına doğru eğimi % 2-4 arasında mı?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "B.1.2.7",
+                "soru": "Barınakta hayvanların kayıp düşmelerini önlemek amacıyla tedbirler alınmış mı?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "B.1.2.8",
+                "soru": "İşletmede sıyırıcı yoksa iki durak arasındaki servis yolları traktörle temizlemede en az 3 m, yemliklerle duraklar arasındaki yerler ise en az 3,20 m olarak planlanmış mı?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "B.1.2.9",
+                "soru": "Barınakta yapay aydınlatmada elektrik ampulleri ve flüoresans lambalar kullanılıyor mu?"
+            },
+            {
+                "soru_id": "17",
+                "soru_adresi": "A.1.2.1",
+                "soru": "Barınak baca açıklığı m2 ahır tabanı için en az 3 cm2 mi?"
+            },
+            {
+                "soru_id": "18",
+                "soru_adresi": "A.1.2.2",
+                "soru": "Barınak bacaları her 5 metrede 1 tane olacak şekilde planlanmış mı?"
+            },
+            {
+                "soru_id": "19",
+                "soru_adresi": "A.1.2.3",
+                "soru": "Barınaklarda durak tabanı, derin altlıklı veya kaplama yataklar şeklinde düzenlenmiş mi?"
+            },
+            {
+                "soru_id": "20",
+                "soru_adresi": "A.1.2.4",
+                "soru": "Barınakta yemlik tabanının en düşük noktası, ahır tabanından en az 10 cm yüksekte mi?"
+            },
+            {
+                "soru_id": "21",
+                "soru_adresi": "A.1.2.5",
+                "soru": "Barınakta gübre yolu temizliğinde modern sistemler var mı?"
+            }
+        ]
+    },
+    {
+        "serbest_yari_acik": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.1.3.1",
+                "soru": "İşletmede hayvanların günlük/öğünlük beslenmelerine imkan tanıyacak yemlik yolu var mı?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "C.1.3.2",
+                "soru": "Barınak yüksekliği tabandan saçaklara kadar en az 3 metre mi?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.1.3.3",
+                "soru": "Barınak çatısı, barınağın korunmasını sağlayacak yapıda mı?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "C.1.3.4",
+                "soru": "Barınak pencereleri, doğal aydınlatma ve havalandırma için toplam ahır taban alanının en az 25’te 1’inde mi?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "C.1.3.5",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) hayvanların herhangi bir zorluk olmadan yatabileceği, dinlenebileceği, ayağa kalkabileceği, dışkı ve idrar yapabileceği şekilde mi?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "C.1.3.6",
+                "soru": "Barınaklarda doğal ya da yapay yoldan bir aydınlatma var mı?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "C.1.3.7",
+                "soru": "Barınak dışında hayvanlar için gezinme alanı var mı?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "C.1.3.8",
+                "soru": "Suluklar, yemlikler ve dinlenme alanlarının ıslanmasına neden olmayacak şekilde mi?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "B.1.3.1",
+                "soru": "Barınak yemlik yolu traktör veya yem dağıtım aracının girebileceği genişlikte mi?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "B.1.3.2",
+                "soru": "Barınak pencereleri hayvanların omuz yüksekliğinin en az 30 cm üzerinde mi?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "B.1.3.3",
+                "soru": "Barınak çatısı doğal havalandırmayı sağlamak için en az 22 derece, en çok 42 derece eğime sahip mi?"
+            },
+            {
+                "soru_id": "12",
+                "soru_adresi": "B.1.3.4",
+                "soru": "Barınak pencereleri hayvanların omuz yüksekliğinin en az 30 cm üzerinde mi?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "B.1.3.5",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) en az 150 cm (karşılıklı ise en az 450 cm) uzunlukta ve en az 110 cm genişlikte mi?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "B.1.3.6",
+                "soru": "Barınak hayvanlarının yaşadığı bölümlerin (durakların) gübrelik ve idrar kanalına doğru eğimi % 2-4 arasında mı?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "B.1.3.7",
+                "soru": "Barınakta hayvanların kayıp düşmelerini önlemek amacıyla tedbirler alınmış mı?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "B.1.3.8",
+                "soru": "İşletmede sıyırıcı yoksa iki durak arasındaki servis yolları traktörle temizlemede en az 3 m, yemliklerle duraklar arasındaki yerler ise en az 3,20 m olarak planlanmış mı?"
+            },
+            {
+                "soru_id": "17",
+                "soru_adresi": "B.1.3.9",
+                "soru": "Barınakta yapay aydınlatmada elektrik ampulleri ve flüoresans lambalar kullanılıyor mu?"
+            },
+            {
+                "soru_id": "18",
+                "soru_adresi": "B.1.3.10",
+                "soru": "Yemlik tabanı gezinti yerinden en az 10 cm yukarıda mı?"
+            },
+            {
+                "soru_id": "19",
+                "soru_adresi": "B.1.3.11",
+                "soru": "Yemliklerde kilit sistemi (şakşak) kullanılıyorsa gezinti yerinden yüksekliği en az 45 cm, eni ise en fazla 20 cm olmalıdır."
+            },
+            {
+                "soru_id": "20",
+                "soru_adresi": "A.1.3.1",
+                "soru": "Barınak baca açıklığı m2 ahır tabanı için en az 3 cm2 mi?"
+            },
+            {
+                "soru_id": "21",
+                "soru_adresi": "A.1.3.2",
+                "soru": "Barınak bacaları her 5 metrede 1 tane olacak şekilde planlanmış mı?"
+            },
+            {
+                "soru_id": "22",
+                "soru_adresi": "A.1.3.3",
+                "soru": "Barınaklarda durak tabanı, derin altlıklı veya kaplama yataklar şeklinde düzenlenmiş mi?"
+            },
+            {
+                "soru_id": "23",
+                "soru_adresi": "A.1.3.4",
+                "soru": "Barınakta yemlik tabanının en düşük noktası, ahır tabanından en az 10 cm yüksekte mi?"
+            },
+            {
+                "soru_id": "24",
+                "soru_adresi": "A.1.3.5",
+                "soru": "Barınakta gübre yolu temizliğinde modern sistemler var mı?"
+            },
+            {
+                "soru_id": "25",
+                "soru_adresi": "A.1.3.6",
+                "soru": "Otomatik bıçaklı küreme sistemleri varsa duraklar arası mesafe en az 2 m, duraklar ile yemlik arası mesafe ise en az 3 m olarak planlanmış mı?"
+            },
+            {
+                "soru_id": "26",
+                "soru_adresi": "A.1.3.7",
+                "soru": "Barınakta yapay aydınlatmada ahır tabanının her 10 m2 'sine 25–30 watt'lık ışık kaynağı var mı?"
+            },
+            {
+                "soru_id": "27",
+                "soru_adresi": "A.1.3.8",
+                "soru": "Barınakta durak genişlikleri ve uzunlukları sığırların yaşlarına göre ayarlanmış mı?"
+            },
+            {
+                "soru_id": "28",
+                "soru_adresi": "A.1.3.9",
+                "soru": "Barınakta gezinti bölmeleri sığırların yaşlarına göre ayarlanmış mı?"
+            }
+        ]
+    },
+    {
+        "serbest_acik": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.1.4.1",
+                "soru": "Barınak üzeri örtülü kısım yağmur sularını içeriye aktarmayacak şekilde mi?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "C.1.4.2",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) varsa, hayvanların herhangi bir zorluk olmadan yatabileceği, dinlenebileceği, ayağa kalkabileceği, dışkı ve idrar yapabileceği şekilde mi?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.1.4.3",
+                "soru": "Barınak dışında hayvanların dinlenme alanlarının açık cephesi önünde hayvanlar için gezinme alanı var mı?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "C.1.4.4",
+                "soru": "Barınak binalarında barındırılmayan hayvanlar olumsuz koşullardan korunuyor ve günde en az bir kere kontrol ediliyor mu?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "B.1.4.1",
+                "soru": "Barınak hayvanlarının yaşadığı bölümler (duraklar) varsa en az 150 cm (karşılıklı ise en az 450 cm) uzunlukta ve en az 110 cm genişlikte mi?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "B.1.4.2",
+                "soru": "Yemlik genişliği, 12 aydan küçük sığırlar için en az 30 cm, 12 aydan büyük sığırlar için en az 60 cm olacak şekilde mi?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "B.1.4.3",
+                "soru": "Gezinme yerinde yağış sularının uzaklaştırılması sağlanıyor mu?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "B.1.4.4",
+                "soru": "Dinlenme yerinde hayvan başına en az 5 m2 alan var mı?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "B.1.4.5",
+                "soru": "Dinlenme yerinde ahır tabanı, gezinme alanından 20-25 cm yüksekte mi?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "B.1.4.6",
+                "soru": "Sundurmalı barınaklarda sundurma en az 3 metre yükseklikte mi?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "B.1.4.7",
+                "soru": "Sundurmalı barınaklarda, 12 aydan küçük her sığır için en az 4 m2, 12 aydan büyük her sığır için en az 7 m2 sundurma alanı var mı?"
+            },{
+                "soru_id": "12",
+                "soru_adresi": "A.1.4.1",
+                "soru": "Barınakta dinlenme yerlerinin yağmurdan korunması için bir saçak çıkıntısı, yağmur oluğu ve suyun tahliyesini sağlayan sistemler / yapılar var mı?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "A.1.4.2",
+                "soru": "Barınakta durak planlanmış ise; genişlikleri ve uzunlukları sığırların yaşlarına göre ayarlanmış mı?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "A.1.4.3",
+                "soru": "Barınakta kompost altlık kullanılmış ise; kompostlu dinlenme alanı inek başına en az 9 m2 mi?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "A.1.4.4",
+                "soru": "Barınakta kompost gübrelerin kuru kalması için vantilatör sistemleri ile gübre karıştırma/havalandırma işlemleri yapılıyor mu?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "A.1.4.5",
+                "soru": "Sundurmalı ve sundurma dışında kalan gezinme alanlarında zemin türüne ve hayvanların yaşlarına göre gerekli alan var mı?"
+            }
+        ]
+    },
+    {
+        "sürü_sagligiveyönetimi": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.2.1",
+                "soru": "Hayvanların yeterli miktarda taze/temiz suya erişimi ve yeterli ekipman var mı?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "C.2.2",
+                "soru": "Hayvanlara verilen su içme kalitesinde mi?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.2.3",
+                "soru": "Suluklar suyun kontamine olmasını engelleyecek şekilde doğru yükseklikte mi?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "C.2.4",
+                "soru": "Hayvanların önünde fizyolojik ihtiyaçlarını karşılayacak şekilde yem var mı?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "C.2.5",
+                "soru": "Yemlikler ve yemleme ekipmanları temiz mi ve düzenli olarak temizleniyor mu?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "C.2.6",
+                "soru": "Satın alınan karma yemin temin edildiği firma, Bakanlıktan onaylı ve kayıtlı mı?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "C.2.7",
+                "soru": "Yem rasyonlarında hayvansal kökenli yem maddeleri dışında maddeler mi kullanıyor?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "B.2.1",
+                "soru": "Suluklardaki suyun kış mevsiminde donması engelleniyor mu?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "B.2.2",
+                "soru": "İşletmede her zaman yedek yem bulunduruluyor mu?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "B.2.3",
+                "soru": "Yemler türlerine göre ayrı olarak depolanıyor mu?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "B.2.4",
+                "soru": "İşletmede yemleme römorku kullanılıyor mu?"
+            },
+            {
+                "soru_id": "12",
+                "soru_adresi": "B.2.5",
+                "soru": "Rasyonlar, tüm personelin rahatça okuyabileceği bir yerde bulunuyor mu?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "B.2.6",
+                "soru": "Yem formülasyonları; alanında uzman kişiler tarafından yapılıyor mu?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "A.2.1",
+                "soru": "İşletme kaba yemini temin etmeyi garantilemiş mi?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "A.2.2",
+                "soru": "İşletme yemi kendisi üretiyorsa üretilen yemlerin besin içeriği analizi yaptırılıyor mu?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "A.2.3",
+                "soru": "İşletmede kolay bozulan yemler var ise her kullanım öncesi fiziksel yönden (koku, renk, görüntü, mantar oluşumu vb.) kontrol ediliyor mu?"
+            },
+            {
+                "soru_id": "17",
+                "soru_adresi": "A.2.4",
+                "soru": "İşletmede hayvanların fizyolojik durumu ve verimine göre gruplama yapılıp farklı yemler ve yemleme programları uygulanıyor mu?"
+            },
+            {
+                "soru_id": "18",
+                "soru_adresi": "A.2.5",
+                "soru": "İşletmede kullanılan yemin partikül büyüklüğü analizi her rasyon değişimi sonrası yapılıyor mu?"
+            },
+            {
+                "soru_id": "19",
+                "soru_adresi": "A.2.6",
+                "soru": "İşletmede kullanılan römork terazisinin kalibrasyonu / doğrulaması yapılıyor mu?"
+            },
+            {
+                "soru_id": "20",
+                "soru_adresi": "C.2.8",
+                "soru": "Yeni doğan buzağıların, doğumdan hemen sonra ve/veya en geç ilk 6 saat içerisinde kolostrum almaları sağlanıyor mu?"
+            },
+            {
+                "soru_id": "21",
+                "soru_adresi": "C.2.9",
+                "soru": "İlk doğumunu yapan düvelerin ilk buzağılama yaşı en fazla 810 gün müdür?"
+            },
+            {
+                "soru_id": "22",
+                "soru_adresi": "C.2.10",
+                "soru": "Doğum yapan ineklerin bir önceki buzağılama aralığı en fazla 450 gün müdür?"
+            },
+            {
+                "soru_id": "23",
+                "soru_adresi": "B.2.7",
+                "soru": "İnekler için kuru dönem süresi hedef değer olan 60 gün (±5 gün) düzeyinde mi?"
+            },
+            {
+                "soru_id": "24",
+                "soru_adresi": "B.2.8",
+                "soru": "İnfertilite (kısırlık) sebebiyle sürüden çıkarma oranı % 8’in altında mı?"
+            },
+            {
+                "soru_id": "25",
+                "soru_adresi": "A.2.7",
+                "soru": "Buzağılara gerekli kolostrum yönetimi yapılıyor mu?"
+            },
+            {
+                "soru_id": "26",
+                "soru_adresi": "A.2.8",
+                "soru": "İnfertilite (kısırlık) sebebiyle sürüden çıkarma oranı % 7’nin altında mı?"
+            },
+            {
+                "soru_id": "27",
+                "soru_adresi": "C.2.11",
+                "soru": "İşletme kemirgen, haşere (böcek, parazit) ve yabani hayvanlara karşı korunuyor mu?"
+            },
+            {
+                "soru_id": "28",
+                "soru_adresi": "C.2.12",
+                "soru": "İşletme çevresi barikatlarla çevrilmiş mi ve giriş-çıkışlar sınırlandırılmış mı?"
+            },
+            {
+                "soru_id": "29",
+                "soru_adresi": "C.2.13",
+                "soru": "İşletmede herhangi bir çiftlik kayıt sistemi var mıdır?"
+            },
+            {
+                "soru_id": "30",
+                "soru_adresi": "C.2.14",
+                "soru": "Hayvanlara uygulanan tedavi ve ilaç kullanımları kayıt altına alınıyor mu?"
+            },
+            {
+                "soru_id": "31",
+                "soru_adresi": "B.2.9",
+                "soru": "İşletmede farklı türde hayvanlar için ayrı barınma alanları var mı?"
+            },
+            {
+                "soru_id": "32",
+                "soru_adresi": "B.2.10",
+                "soru": "Günlük sürü gözlemi yapılıyor mu?"
+            },
+            {
+                "soru_id": "33",
+                "soru_adresi": "A.2.9",
+                "soru": "İşletmenin risk yönetimi var mı ve acil durumda 24 saat içinde yem temini mümkün mü?"
+            },
+            {
+                "soru_id": "34",
+                "soru_adresi": "A.2.10",
+                "soru": "İşletmede hayvanlar doğduğu andan çiftlikten çıkana kadar dijital ortamda (sürü yönetim programları aracılığıyla) izleniyor ve merkezi bir veri tabanına kaydediliyor mu?"
+            },
+            {
+                "soru_id": "35",
+                "soru_adresi": "A.2.11",
+                "soru": "İşletmede hayvanlara yönelik metabolik profil testi ve sağlık taraması yapılıyor mu?"
+            },
+            {
+                "soru_id": "36",
+                "soru_adresi": "A.2.12",
+                "soru": "Çiftlikte ayda bir düzenli olarak veteriner hekim kontrolü yapılıyor mu?"
+            },
+            {
+                "soru_id": "37",
+                "soru_adresi": "A.2.13",
+                "soru": "İşletmede aşılar, hijyen, beslenme hastalıkları vb. tebdirler ile ilgili koruyucu hekimlik programı yürütülüyor mu?"
+            },
+            {
+                "soru_id": "38",
+                "soru_adresi": "A.2.14",
+                "soru": "Çeviren inek (R. Breder) oranı sürüdeki sağmal ineklerde %9-12 aralığında mı?"
+            },
+            {
+                "soru_id": "39",
+                "soru_adresi": "C.2.15",
+                "soru": "Hayvanlarda hastalanma, yaralanma ve ölüm durumlarında teşhis için mutlaka veteriner hekimden gecikmeksizin yardım isteniyor mu?"
+            },
+            {
+                "soru_id": "40",
+                "soru_adresi": "C.2.16",
+                "soru": "Hayvanlarda ihbarı mecburi hastalık ortaya çıktığında (veya şüphelenildiğinde) resmi makamlara derhal haber veriliyor mu?"
+            },
+            {
+                "soru_id": "41",
+                "soru_adresi": "C.2.17",
+                "soru": "Buzağı ishallerinden korunmaya yönelik anaçlara gerekli aşılar yapılıyor mu?"
+            },
+            {
+                "soru_id": "42",
+                "soru_adresi": "C.2.18",
+                "soru": "İşletmede ölen hayvanlara mevzuata uygun olarak işlem yapılıyor mu?"
+            },
+            {
+                "soru_id": "43",
+                "soru_adresi": "B.2.11",
+                "soru": "Buzağı ölüm oranı % 15’in altında mı?"
+            },
+            {
+                "soru_id": "44",
+                "soru_adresi": "B.2.12",
+                "soru": "Ayak hastalığı görülme oranı % 20’nin altında mı?"
+            },
+            {
+                "soru_id": "45",
+                "soru_adresi": "B.2.13",
+                "soru": "Sağmal inekler için ıskartaya çıkarma oranı % 30’un altında mı?"
+            },
+            {
+                "soru_id": "46",
+                "soru_adresi": "A.2.15",
+                "soru": "Buzağı ölüm oranı % 10’un altında mı?"
+            },
+            {
+                "soru_id": "47",
+                "soru_adresi": "A.2.16",
+                "soru": "Ayak hastalığı görülme oranı % 15’in altında mı?"
+            },
+            {
+                "soru_id": "48",
+                "soru_adresi": "A.2.17",
+                "soru": "Sağmal inekler için ıskartaya çıkarma oranı % 20’nin altında mı?"
+            },
+            {
+                "soru_id": "49",
+                "soru_adresi": "A.2.18",
+                "soru": "Klinik Mastitis her 100 inek/ay için % 2-5 vaka aralığında mı?"
+            },
+            {
+                "soru_id": "50",
+                "soru_adresi": "A.2.19",
+                "soru": "Ayda bir California Mastitis Testi (CMT) kontrolü ile kimyasal ve nitel hücre sayısı kontrolü yapılıyor mu?"
+            }
+        ]
+    },
+    {
+        "hijyen": [
+            {
+                "soru_id": "1",
+                "soru_adresi": "C.3.1",
+                "soru": "Yemin depolanması ve muamele edilmesi için kullanılan binalar dahil olmak üzere, birincil üretim veya ilgili faaliyetlerle bağlantılı bir şekilde kullanılan bütün tesisler temiz tutuluyor ve temizlik sonrası uygun bir biçimde dezenfekte ediliyor mu?"
+            },
+            {
+                "soru_id": "2",
+                "soru_adresi": "C.3.2",
+                "soru": "Genel temizlik maksatlı içilebilir su veya şebeke suyu kullanılıyor mu?"
+            },
+            {
+                "soru_id": "3",
+                "soru_adresi": "C.3.3",
+                "soru": "Haşerelere ve bulaşmaya sebep olacak hayvanlara karşı önlemler alınıyor mu?"
+            },
+            {
+                "soru_id": "4",
+                "soru_adresi": "C.3.4",
+                "soru": "Sağım ekipmanı ve sütün muamele edildiği, depolandığı veya soğutulduğu birimler, bulaşma riskini en aza indirecek şekilde konumlandırılmış ve inşa edilmiş mi?"
+            },
+            {
+                "soru_id": "5",
+                "soru_adresi": "C.3.5",
+                "soru": "Sütün temas ettiği tüm ekipman ve donanımlar rutin olarak bir program dahilinde temizleniyor ve dezenfekte ediliyor mu?"
+            },
+            {
+                "soru_id": "6",
+                "soru_adresi": "C.3.6",
+                "soru": "Sağım ekipmanlarının kullanımdan sonra temizliği yapılıyor mu?"
+            },
+            {
+                "soru_id": "7",
+                "soru_adresi": "C.3.7",
+                "soru": "Sağım ekipmanları (hortum, boru, meme lastiği vb.) gıdaya uygun sertifikalı malzemeden üretilmiş mi?"
+            },
+            {
+                "soru_id": "8",
+                "soru_adresi": "C.3.8",
+                "soru": "Atıklar ve zararlı maddeler, bulaşmayı önleyecek şekilde depolanıyor ve/veya imha ediliyor mu?"
+            },
+            {
+                "soru_id": "9",
+                "soru_adresi": "C.3.9",
+                "soru": "Gıda ile temas eden personelin sağlıklı olması ve sağlık riskleri konusunda eğitim alması sağlanıyor mu?"
+            },
+            {
+                "soru_id": "10",
+                "soru_adresi": "C.3.10",
+                "soru": "Sağım ve/veya ilgili işlemleri yapan kişiler, uygun ve temiz kıyafetler giyiyor mu?"
+            },
+            {
+                "soru_id": "11",
+                "soru_adresi": "C.3.11",
+                "soru": "Sağıma başlamadan önce, meme uçları, memeler ve civarı temizleniyor mu?"
+            },
+            {
+                "soru_id": "12",
+                "soru_adresi": "C.3.12",
+                "soru": "Sağımı yapılan hayvanlarda tanımlanabilir bir meme yangısı olup olmadığının kontrolü yapılıyor mu?"
+            },
+            {
+                "soru_id": "13",
+                "soru_adresi": "C.3.13",
+                "soru": "Sağım ve/veya ilgili işlemleri yapan kişiler, işlemlerden önce ellerini yıkıyor mu ve işlem boyunca el temizliğine dikkat ediyor mu?"
+            },
+            {
+                "soru_id": "14",
+                "soru_adresi": "C.3.14",
+                "soru": "Kolostrum çiğ sütten ayrı sağılıyor mu?"
+            },
+            {
+                "soru_id": "15",
+                "soru_adresi": "C.3.15",
+                "soru": "Sütün fiziksel-duyusal muayenesi her sağım öncesi kontrol ediliyor mu?"
+            },
+            {
+                "soru_id": "16",
+                "soru_adresi": "C.3.16",
+                "soru": "Hayvanlarda izin verilen veteriner tıbbi ürünleri kullanıldığında, bu ürünler için tavsiye edilen kalıntı arınma süresinin tamamlanmasına uyuluyor mu?"
+            },
+            {
+                "soru_id": "17",
+                "soru_adresi": "C.3.17",
+                "soru": "Sağımdan hemen sonra süt soğutmaya alınıyor mu ve uygun sıcaklık aralığında soğutuluyor mu?"
+            }
+        ]
+    }
+]

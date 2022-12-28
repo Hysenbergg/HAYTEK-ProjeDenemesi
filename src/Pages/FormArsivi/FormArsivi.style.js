@@ -23,14 +23,12 @@ export default StyleSheet.create({
     },
     modal_container: {
         flex: 1,
-        backgroundColor: 'white'
     },
     modalView: {
         margin: 20,
         backgroundColor: "white",
         borderRadius: 20,
-        padding: 35,
-        alignItems: "center",
+        padding: 20,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -50,7 +48,8 @@ export default StyleSheet.create({
         elevation: 2
     },
     buttonClose: {
-        backgroundColor: "#2196F3",
+        marginTop: 8,
+        backgroundColor: "purple",
     },
     modal_offButton: {
         color: "white",
@@ -84,5 +83,18 @@ export default StyleSheet.create({
         fontSize: 15,
         fontWeight: "bold",
     },
-    
+    formGiris_aciklamalar: {
+        margin: 10,
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    formBaslik:{
+        fontSize: 15,
+        fontWeight: "bold",
+        color: "black",
+    },
+    formBilgi_aciklama: {
+        color: "black",
+        fontSize: 14
+    }
 })

@@ -62,15 +62,15 @@ function TabBarScreen() {
         name="FormStack"
         component={FormStackYapisi}
         options={{
-          tabBarIcon: () => <Icon name="home" size={30} />,
-          tabBarLabel: 'Home',
+          tabBarIcon: () => <Icon name="form-select" size={30} />,
+          tabBarLabel: 'Formlar',
         }}
       />
       <Tab.Screen
         name="FormListeleme"
         component={FormListeleme}
         options={{
-          tabBarIcon: () => <Icon name="folder-home" size={30} />,
+          tabBarIcon: () => <Icon name="folder" size={30} />,
           tabBarLabel: 'Arşiv',
         }}
       />
@@ -79,25 +79,26 @@ function TabBarScreen() {
         component={ProfilePage}
         options={{
           tabBarIcon: () => <Icon name="account" size={30} />,
-          tabBarLabel: 'Settings',
+          tabBarLabel: 'Profil',
         }}
       />
     </Tab.Navigator>
   );
-}
+};
 
+// Bu ikinci stack değişkenini aynı stack üzerinden farklı stack yapısı yaptığımızda hata alıyorduk o yüzden ikinciyi tanımladık.
 const FormStack = createNativeStackNavigator();
 
 function FormStackYapisi() {
   return (
-    <Stackk.Navigator
+    <FormStack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stackk.Screen name="SelectedForm" component={SelectedForm} />
-      <Stackk.Screen name="LoginForm" component={LoginForm} />
-    </Stackk.Navigator>
+      <FormStack.Screen name="SelectedForm" component={SelectedForm} />
+      <FormStack.Screen name="LoginForm" component={LoginForm} />
+    </FormStack.Navigator>
   );
-}
+};
 
 export default Stack;

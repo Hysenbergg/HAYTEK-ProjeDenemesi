@@ -1,24 +1,135 @@
-import React from "react";
-import { SafeAreaView, FlatList, Text, View, Alert, TouchableOpacity, Modal, Pressable, Button,  } from 'react-native';
-import { useDispatch } from "react-redux";
-//import MyTextInput from "../../Components/TextInput/TextInput";
-//import MyButton from '../../Components/Mybutton/Mybutton';
+import React, {useState, useEffect} from 'react';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  FlatList,
+  TouchableOpacity,
+  Modal,
+  Pressable,
+  Alert,
+} from 'react-native';
 import styles from './FormArsivi.style';
 
-export default class FormArsivi extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      FlatListItems: [],
-      modalVisible: false,
-    };
-    realm = new Realm({ path: 'FormDatabase.realm' });
-    var form_details = realm.objects('form_details');
-    this.state = {
-      FlatListItems: form_details,
-      modalVisible: false,
-    };
-  }
+const realm = new Realm({path: 'FormDatabase.realm'});
+
+const Arsiv = () => {
+  var form_details = realm.objects('form_details');
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedForm, setSelectedForm] = useState(null);
+
+  const showModal = car => {
+    setModalVisible(true);
+    setSelectedForm(car);
+  };
+
+  const hideModal = () => {
+    setModalVisible(false);
+    setSelectedForm(null);
+  };
+
+  const FormListesi = () => {
+    return (
+      <>
+        <FlatList
+          data={form_details}
+          keyExtractor={item => item.form_id}
+          renderItem={({item}) => (
+            <TouchableOpacity onPress={() => showModal(item)}>
+              <View style={styles.body_container}>
+                <Text style={styles.formid}>{item.form_id}</Text>
+                <View style={styles.id_container}>
+                  <Text style={styles.formveritext}>
+                    Dosya Numarası: {item.dosya_numarasi}
+                  </Text>
+                  <Text style={styles.formveritext}>
+                    Firma/Kuruluş İsmi: {item.firma_kurulus}
+                  </Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+          )}
+        />
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={hideModal}>
+          {selectedForm && (
+            <View style={styles.modal_container}>
+              <View style={styles.modalView}>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Dosya Numarası:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.dosya_numarasi} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Değerlendirme Tarihi:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.degerlendirme_tarihi} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Firma/Kuruluş:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.firma_kurulus} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Adres:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.firma_adres} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Telefon No:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.firma_telefon_no} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>İlgili Kişi:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.firma_ilgili_kisi} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Baş Denetçi:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.bas_denetci_ismi} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Denetçi:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.yedek_denetci_1_ismi} </Text>
+                </View>
+                <View style={styles.formGiris_aciklamalar}>
+                  <Text style={styles.formBaslik}>Denetçi:</Text>
+                  <Text style={styles.formBilgi_aciklama} > {selectedForm.yedek_denetci_2_ismi} </Text>
+                </View>
+                <Pressable
+                  style={[styles.button, styles.buttonClose]}
+                  onPress={() => setModalVisible(false)}>
+                  <Text style={styles.modal_offButton}>
+                    Form Ekranını Kapat
+                  </Text>
+                </Pressable>
+              </View>
+            </View>
+          )}
+        </Modal>
+      </>
+    );
+  };
+
+  return (
+    <SafeAreaView style={styles.centeredView}>
+      <Text style={styles.baslik}> Form Arşivi </Text>
+      <FormListesi />
+    </SafeAreaView>
+  );
+};
+
+export default Arsiv;
+
+/*
+  <MyTextInput 
+    placeholder="ID numarası griniz.." 
+    onChangeText={input_form_id => this.setState({ input_form_id })}
+  />
+
+  <MyButton 
+    title="Form Sil"
+    customClick={this.deleteForm.bind(this)}
+  />
 
   // Önceden gerçekleştirilmiş soru çizelgelerinin bulunduğu arşiv içerisinde soru çizelgesi silme fonksiyonu.
   deleteForm = () => {
@@ -50,124 +161,5 @@ export default class FormArsivi extends React.Component {
       }
     }); 
   };
-
-  // Arşiv içerisinde kaydedilmiş soru çizelgeleri arasında onları birbiriden ayrı gözükmesini sağlayan ayırıcı.
-  ListViewItemSeparator = () => {
-    return (
-      <View style={styles.separator} />
-    );
-  };
-  
-  // tıklanabilir listenin fonksiyonu.
-  FormListesi = () => {
-
-    return (
-      <FlatList
-        data={this.state.FlatListItems}
-        ItemSeparatorComponent={this.ListViewItemSeparator}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <TouchableOpacity onPress={() =>  this.setState(prevState => ({
-            modalVisible: !prevState.modalVisible
-          }))}>
-            <View style={styles.body_container}>
-              <Text style={styles.formid}>{item.form_id}</Text>
-              <View style={styles.id_container} >
-                <Text style={styles.formveritext}>Dosya Numarası: {item.dosya_numarasi}</Text>
-                <Text style={styles.formveritext}>Firma/Kuruluş İsmi: {item.firma_kurulus}</Text>
-              </View>
-            </View>
-          </TouchableOpacity>
-        )}
-      />
-    );
-  };
-
-  // Form Listesinde tıklanabilir olan itemların tıklandıktan sonra ki açılaccak olan pop-up ekranı.
-  FormListeAyrinti = () => {
-    return (
-      <Modal
-          animationType="slide"
-          transparent={true}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {
-            Alert.alert("Modal has been closed.");
-            this.setState(prevState => ({
-              modalVisible: !prevState.modalVisible
-            }));
-          }}
-        >
-          <View style={styles.modal_container} >
-            <View style={styles.modalView}>
-              <Text style={{margin: 10}}> Buraya tıklanan formun bilgileri gelecek. </Text>
-              <Pressable
-                style={[styles.button, styles.buttonClose]}
-                onPress={() => this.setState(prevState => ({
-                  modalVisible: !prevState.modalVisible
-                }))}
-              > 
-                <Text style={styles.modal_offButton}>Form Ekranını Kapat</Text>
-              </Pressable>
-            </View>
-          </View>
-        </Modal>
-    )
-  }
-
-  //Şu anda geçici olarak kapalı.
-  FormListeAyrintiChild = () => {
-    return (
-      <FlatList
-        data={this.state.FlatListItems}
-        ItemSeparatorComponent={this.ListViewItemSeparator}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => this.setState(prevState => ({
-            modalVisible: !prevState.modalVisible
-          }))}>
-            <View style={styles.body_container}>
-              <View style={styles.id_container} >
-                <Text style={styles.formveritext}>Değerlendirme Tarihi: {item.degerlendirme_tarihi}</Text>
-                <Text style={styles.formveritext}>Dosya Numarası: {item.dosya_numarasi}</Text>
-                <Text style={styles.formveritext}>Firma/Kuruluş İsmi: {item.firma_kurulus}</Text>
-                <Text style={styles.formveritext} >Firma Adresi: {item.firma_adres}</Text>
-                <Text style={styles.formveritext}>Firma Telefon Numarası: {item.firma_telefon_no}</Text>
-                <Text style={styles.formveritext}>Firma Fax: {item.firma_fax}</Text>
-                <Text style={styles.formveritext}>Firma e-posta: {item.firma_eposta}</Text>
-                <Text style={styles.formveritext}>Firma İlgili Kişisi: {item.firma_ilgili_kisi}</Text>
-              </View>
-            </View>
-          </TouchableOpacity>
-        )}
-      />
-    )
-  }
-
-  render() {
-    return (
-      <SafeAreaView style={styles.centeredView}>
-        <Text style={styles.baslik} > Form Arşivi </Text>
-        <this.FormListeAyrinti />        
-        <this.FormListesi />
-      </SafeAreaView>
-    )
-  }
-}
-/*
-  <MyTextInput 
-    placeholder="ID numarası griniz.." 
-    onChangeText={input_form_id => this.setState({ input_form_id })}
-  />
-
-  <MyButton 
-    title="Form Sil"
-    customClick={this.deleteForm.bind(this)}
-  />
-  <Text style={styles.formveritext}>Değerlendirme Tarihi: {item.degerlendirme_tarihi}</Text>
-  <Text>Firma Adresi: {item.firma_adres}</Text>
-  <Text>Firma Telefon Numarası: {item.firma_telefon_no}</Text>
-  <Text>Firma Fax: {item.firma_fax}</Text>
-  <Text>Firma e-posta: {item.firma_eposta}</Text>
-  <Text>Firma İlgili Kişisi: {item.firma_ilgili_kisi}</Text>
 
 */
